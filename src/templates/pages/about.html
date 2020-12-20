@@ -1,0 +1,31 @@
+{% extends 'layouts/base.html' %}
+
+{% block page_content %}
+    <div class="o-hidden" data-overlay>
+        <section class="pb-0">
+            <div class="container">
+                <div class="row align-items-center justify-content-center justify-content-lg-between text-center text-lg-left">
+                    <div class="col-md-9 col-lg-6 col-xl-5 pl-lg-5 pl-xl-0 order-lg-2" data-aos="fade-left"
+                         data-aos-delay="250">
+                        <h1 class="display-3">A feisty group of
+                            <mark data-aos="highlight-text" data-aos-delay="500">change makers</mark>
+                        </h1>
+                        <p class="lead">
+                            Berspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                            totam rem aperiam.
+                        </p>
+                        <a href="#" class="lead">Meet the crew</a>
+                    </div>
+                    <div class="col-md-8 col-lg-6 mt-4 mt-md-5 mt-lg-0 order-lg-1" data-aos="fade-right">
+                        <img src="{{ url_for('static', filename='assets/img/about-1.jpg') }}" alt="Image"
+                             class="rounded img-fluid shadow-lg">
+                    </div>
+                </div>
+            </div>
+            <div class="position-absolute w-50 h-100 top right" data-jarallax-element="50">
+                <div class="blob bg-primary opacity-20 w-100 h-100 top left"></div>
+            </div>
+            <div class="divider divider-bottom bg-primary-3"></div>
+        </section>
+    </div></div>
+{% endblock %}
