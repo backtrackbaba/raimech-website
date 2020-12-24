@@ -1,6 +1,6 @@
 # example netlify.toml
 [build]
-  command = "# no build command"
+  command = "cd src && python app.py build"
   functions = "functions"
   publish = "src/build/"
 
