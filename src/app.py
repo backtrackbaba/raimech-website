@@ -5,6 +5,7 @@ from flask_frozen import Freezer
 
 app = Flask(__name__)
 freezer = Freezer(app)
+app.config['FREEZER_DESTINATION'] = '../build'
 
 
 @app.route('/')
@@ -12,17 +13,17 @@ def home():
     return render_template('pages/index.html')
 
 
-@app.route('/about')
+@app.route('/about/')
 def about():
     return render_template('pages/about.html')
 
 
-@app.route('/careers')
+@app.route('/careers/')
 def careers():
     return render_template('pages/careers.html')
 
 
-@app.route('/contact')
+@app.route('/contact/')
 def contact():
     return render_template('pages/contact.html')
 

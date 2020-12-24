@@ -1,8 +1,8 @@
 # example netlify.toml
 [build]
-  command = "cd src && python app.py build"
+  command = "./scripts/build-site.sh"
   functions = "functions"
-  publish = "src/build/"
+  publish = "build/"
 
   ## Uncomment to use this redirect for Single Page Applications like create-react-app. 
   ## Not needed for static site generators.
