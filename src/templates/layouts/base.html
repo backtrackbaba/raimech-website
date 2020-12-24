@@ -17,10 +17,12 @@
 <div class="loader">
     <div class="loading-animation"></div>
 </div>
-<div class="navbar-container">
-    {{ navbar.load_navbar() }}
-</div>
-{% block page_content_before %}{% endblock %}
+
+{% block page_content_before %}
+    <div class="navbar-container">
+        {{ navbar.load_navbar() }}
+    </div>
+{% endblock %}
 
 <div class="main-content">
     {% block page_content %}{% endblock %}

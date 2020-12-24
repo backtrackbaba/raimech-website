@@ -1,5 +1,6 @@
-{% macro load_navbar() %}
-    <nav class="navbar navbar-expand-lg navbar-light" style="margin-bottom: -80px; padding: 0">
+{% macro load_navbar(nav_margin_style) %}
+    <nav class="navbar navbar-expand-lg navbar-light" {% if nav_margin_style %}
+         style="{{ nav_margin_style }}" {% endif %}>
         <div class="container">
             <a class="navbar-brand navbar-brand-dynamic-color fade-page" href="{{ url_for('home') }}">
                 <img alt="Raimech Aero Logo" width="125px"
