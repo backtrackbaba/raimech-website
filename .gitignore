@@ -6,3 +6,4 @@ node_modules
 /build/
 # src/static/css/
 /.idea/
+__pycache__
